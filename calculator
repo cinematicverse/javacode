@@ -1,0 +1,49 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package prj;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author prath
+ */
+public class PRJ {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner sc=new Scanner(System.in);
+        int a,b,c=0;
+        System.out.println("Enter the first number");
+        a=sc.nextInt();
+        System.out.println("Enter the second number");
+        b=sc.nextInt();
+        System.out.println("enter your choice");
+        System.out.println("1.ADDITION\n 2.SUBSTRACTION\n 3.MULTIPLICATION\n 4.DEVISION\n 5.EXIT");
+        int n=sc.nextInt();
+        switch(n){
+            case 1:System.out.println("sum:"+(c=a+b));
+                break;
+            case 2:System.out.println("diff:"+(c=a-b));
+                break;
+            case 3:System.out.println("mul:"+(c=a*b));
+                break;
+            case 4: if(b==0){
+                System.out.println("Devided by zero error");
+                break;
+            }
+            else{
+                System.out.println("div:"+(c=a/b));
+                break;
+            }
+            default :System.out.println("code exited");
+        }
+    }
+    
+}
